@@ -415,7 +415,7 @@
         </div>
         <div class="row">
           <div class="col-lg-12">
-            <form id="contactForm" name="sentMessage" novalidate>
+            <form id="contactForm" method="POST" action="https://formspree.io/support@weikian.com" name="sentMessage" novalidate>
               <div class="row">
                 <div class="col-md-6">
                   <div class="form-group">
@@ -454,7 +454,8 @@
       <div class="container">
         <div class="row">
           <div class="col-md-4">
-            <span class="copyright">Copyright &copy; Your Website 2017</span>
+            <span class="copyright">Copyright &copy; Your Website <script type="text/javascript">
+              document.write(new Date().getFullYear());</script></span>
           </div>
           <div class="col-md-4">
             <ul class="list-inline social-buttons">
