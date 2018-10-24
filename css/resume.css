@@ -93,6 +93,11 @@ p.lead {
   outline-color: #d48a6e;
 }
 
+.img-fluid {
+  width: 400px;
+  height: 300px;
+}
+
 @media (min-width: 992px) {
   #sideNav {
     text-align: center;
