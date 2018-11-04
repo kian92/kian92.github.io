@@ -20,6 +20,7 @@
 
   <!-- Custom styles for this template -->
   <link href="css/resume.min.css" rel="stylesheet">
+  <link href="css/carousel.css" rel="stylesheet">
 
 </head>
 
@@ -58,6 +59,9 @@
         </li>
         <li class="nav-item">
           <a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio & Talks</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#testimonial">Testmonials</a>
         </li>
       </ul>
     </div>
@@ -105,11 +109,12 @@
             <div class="subheading mb-3">AlphaXLab PTE. LTD.</div>
             <p>- Establish the company’s technical vision and leads all aspects of the company’s technological
               development.</p>
-              <p>
-              - Works in a consultative fashion with other department heads, such as marketing, production and operations
+            <p>
+              - Works in a consultative fashion with other department heads, such as marketing, production and
+              operations
               as an advisor of technologies that may improve their efficiency and effectiveness.
             </p>
-              <p>- Conducts research and case studies on leading edge technologies and makes determinations on the
+            <p>- Conducts research and case studies on leading edge technologies and makes determinations on the
               probability of implementation.
             </p>
           </div>
@@ -348,21 +353,72 @@
       <!-- Page Content -->
       <div class="container">
 
-        <h1 class="my-4 text-center text-lg-left">Portfolio & Talks</h1>
+        <h2 class="my-4 text-center text-lg-left">Portfolio & Talks</h2>
 
         <div class="row text-center text-lg-left">
 
           <div class="text-center">
             <!-- <a href="#" class="d-block mb-4 h-100" data-toggle="modal" data-target="#exampleModal"> -->
-              <img class="img-fluid" src="img/portfolio.png" alt="portfolio">
+            <img class="img-fluid" src="img/portfolio.png" alt="portfolio">
             <!-- </a> -->
           </div>
 
-          </div>
         </div>
-
       </div>
     </section>
+
+    <hr class="m-0">
+
+    <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="testimonial">
+      <h2 class="my-4 text-center text-lg-left">Testimonials</h2>
+      <div class="row">
+        <div class="col-md-8 col-center m-auto">
+          <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <!-- Carousel indicators -->
+            <ol class="carousel-indicators">
+              <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+              <li data-target="#myCarousel" data-slide-to="1"></li>
+              <!-- <li data-target="#myCarousel" data-slide-to="2"></li> -->
+            </ol>   
+            <!-- Wrapper for carousel items -->
+            <div class="carousel-inner">
+              <div class="item carousel-item active">
+                <div class="img-box"><img src="img/shyla.jpeg" alt=""></div>
+                <p class="testimonial">One of the directors who were sitting at the back liked your segments
+                  as it helped him see that Chatbots are easy to do. Participants found the Chatbots segment is the
+                  most useful 😀.
+                </p>
+                <p class="overview"><b>Shyla</b>, IRAS</p>
+              </div>
+              <div class="item carousel-item">
+                <div class="img-box"><img src="img/nelson_tan.jpeg" alt=""></div>
+                <p class="testimonial"><b>Choo Wei Kian's</b> role was to develop the mobile device user interface,
+                  and enchance the app interactivity to provide a better user experience. I was impressed by 
+                  his ability to understand the complex workflow required by the users, and to successfully 
+                  translate this into the software parameters.
+                </p>
+                <p class="overview"><b>Nelson Tan</b>, Director of Orange Cactus Project Pte Ltd</p>
+              </div>
+              <!-- <div class="item carousel-item">
+                <div class="img-box"><img src="/examples/images/clients/3.jpg" alt=""></div>
+                <p class="testimonial">Phasellus vitae suscipit justo. Mauris pharetra feugiat ante id lacinia. Etiam faucibus mauris id tempor egestas. Duis luctus turpis at accumsan tincidunt. Phasellus risus risus, volutpat vel tellus ac, tincidunt fringilla massa. Etiam hendrerit dolor eget rutrum.</p>
+                <p class="overview"><b>Michael Holz</b>, Seo Analyst</p>
+              </div> -->
+            </div>
+            <!-- Carousel controls -->
+            <a class="carousel-control left carousel-control-prev" href="#myCarousel" data-slide="prev">
+              <i class="fa fa-angle-left"></i>
+            </a>
+            <a class="carousel-control right carousel-control-next" href="#myCarousel" data-slide="next">
+              <i class="fa fa-angle-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </div>
+  
 
   </div>
 
