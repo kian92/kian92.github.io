@@ -123,9 +123,20 @@
           <div class="badge"><b>Developer. Problem solver.</b>A practical partner for your next build.</div>
         </div>
       </div>
-      <div class="wrap trust">
-        <span>Experience across teams at</span>
-        <b>FusionHome</b><b>Sgcarmart</b><b>ABC Cooking Studio</b><b>Jobscentral</b><b>GovTech</b>
+      <div class="wrap trust" data-company-carousel>
+        <span id="company-experience-label">Experience across teams at</span>
+        <div class="trust-viewport" aria-labelledby="company-experience-label">
+          <div class="trust-track">
+            <ul class="trust-group">
+              <li><b>FusionHome</b></li>
+              <li><b>Sgcarmart</b></li>
+              <li><b>ABC Cooking Studio</b></li>
+              <li><b>Jobscentral</b></li>
+              <li><b>GovTech</b></li>
+            </ul>
+          </div>
+        </div>
+        <button class="trust-toggle" type="button" aria-label="Pause company carousel" hidden><span aria-hidden="true">Ⅱ</span></button>
       </div>
     </section>
 
@@ -176,7 +187,7 @@
     <section class="help" id="services">
       <div class="wrap">
         <div class="eyebrow">How I can help</div>
-        <h2>Two ways we can work together</h2>
+        <h2>Three ways we can work together</h2>
         <div class="help-grid">
           <div class="card">
             <div class="who">For businesses</div>
@@ -187,6 +198,16 @@
               <li>Help customers get answers faster with AI</li>
               <li>Make it easier for customers to book, buy, and pay</li>
               <li>Improve outdated websites or systems that slow you down</li>
+            </ul>
+          </div>
+          <div class="card">
+            <div class="who">For startups</div>
+            <h3>Turn your idea into a business.</h3>
+            <p>I work with startups to turn early ideas into websites, apps, and AI products—helping you launch, attract paying customers, and grow.</p>
+            <ul>
+              <li>Turn your idea into a clear plan</li>
+              <li>Build and launch your first product</li>
+              <li>Improve it as your customers and business grow</li>
             </ul>
           </div>
           <div class="card">
@@ -306,5 +327,6 @@
   </footer>
 
   <script src="js/site.js" defer></script>
+  <script src="js/company-carousel.js" defer></script>
 </body>
 </html>

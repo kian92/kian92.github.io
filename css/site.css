@@ -101,7 +101,7 @@
 
     /* Help */
     .help { background: var(--surface); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
-    .help-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-top: 48px; }
+    .help-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; margin-top: 48px; }
     .card { background: var(--bg); border: 1px solid var(--line); border-radius: var(--radius); padding: 32px; }
     .card .who { font-size: 13px; font-weight: 600; color: var(--accent); text-transform: uppercase; letter-spacing: .1em; }
     .card h3 { margin: 10px 0 14px; }
@@ -303,4 +303,32 @@ nav a, .logo { display: inline-flex; align-items: center; min-height: 44px; }
   .contact .btn { justify-content: center; font-size: 14px; padding-inline: 10px; }
   footer .wrap { flex-direction: column; align-items: center; gap: 16px; text-align: center; }
   footer a { display: inline-flex; align-items: center; min-height: 44px; margin-inline: 12px; }
+}
+
+/* Auto-scrolling company strip; the original list remains readable without JS. */
+.hero .trust { display: grid; grid-template-columns: 140px minmax(0, 1fr) auto; gap: 24px; }
+.hero .trust > span { grid-column: auto; max-width: 140px; }
+.trust-viewport { min-width: 0; }
+.trust-group { display: flex; flex-wrap: wrap; align-items: center; gap: 20px 36px; list-style: none; padding: 0; margin: 0; }
+.trust-group li { flex-shrink: 0; }
+.trust-group b { white-space: nowrap; }
+.trust-toggle { width: 44px; height: 44px; padding: 0; border: 1px solid var(--line); border-radius: 50%; background: transparent; color: var(--accent); font: 16px/1 Inter, sans-serif; cursor: pointer; }
+.trust-toggle[hidden] { display: none; }
+.is-animated .trust-viewport { overflow: hidden; mask-image: linear-gradient(to right, transparent, #000 20px, #000 calc(100% - 20px), transparent); -webkit-mask-image: linear-gradient(to right, transparent, #000 20px, #000 calc(100% - 20px), transparent); }
+.is-animated .trust-track { display: flex; width: max-content; animation: company-scroll 30s linear infinite; }
+.is-animated .trust-group { flex-wrap: nowrap; flex-shrink: 0; justify-content: space-around; min-width: var(--trust-group-width, 0px); gap: clamp(36px, 4vw, 64px); padding-right: clamp(36px, 4vw, 64px); }
+.is-paused .trust-track { animation-play-state: paused; }
+@media (hover: hover) { .is-animated .trust-viewport:hover .trust-track { animation-play-state: paused; } }
+@keyframes company-scroll { to { transform: translateX(-50%); } }
+@media (max-width: 860px) {
+  .hero .trust { grid-template-columns: minmax(0, 1fr) auto; gap: 14px; }
+  .hero .trust > span { grid-column: 1 / -1; max-width: none; }
+  .trust-group b { font-size: 16px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .is-animated .trust-track { animation: none; transform: none; width: auto; }
+  .trust-group[aria-hidden="true"] { display: none; }
+  .is-animated .trust-group { flex-wrap: wrap; min-width: 0; padding: 0; }
+  .is-animated .trust-viewport { overflow: visible; mask-image: none; -webkit-mask-image: none; }
+  .trust-toggle { display: none; }
 }
