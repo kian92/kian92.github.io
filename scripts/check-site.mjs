@@ -62,4 +62,10 @@ for (const [page, html] of sources) {
 const sitemap = new Set([...((await read('sitemap.xml')).matchAll(/<loc>(.*?)<\/loc>/g))].map(m => m[1]));
 assert.deepEqual(sitemap, canonicalUrls, 'Sitemap must match the public pages');
 assert((await read('robots.txt')).includes(`Sitemap: ${domain}/sitemap.xml`));
-console.log(`Checked ${pages.length} pages: links, assets, responsive images, metadata, and sitemap. No third-party npm dependencies.`);
+const llms = await read('llms.txt');
+assert(llms.startsWith('# '), 'llms.txt needs a site title');
+for (const [, reference] of llms.matchAll(/\[[^\]]+\]\(([^)]+)\)/g)) {
+  const url = new URL(reference);
+  if (url.origin === domain) await checkReference(`${url.pathname}${url.hash}`, 'index.html');
+}
+console.log(`Checked ${pages.length} pages: links, assets, responsive images, metadata, sitemap, and llms.txt links. No third-party npm dependencies.`);

@@ -1,0 +1,32 @@
+# Wei Kian — Freelance Web, App & AI Developer
+
+> Choo Wei Kian is a freelance developer serving businesses, startups, and agencies in Singapore and Malaysia. He builds websites, mobile apps, e-commerce stores, internal business tools, and AI integrations, with support from planning and design through development, launch, and maintenance.
+
+This is Wei Kian's personal portfolio. It includes freelance projects and work delivered as part of company teams. The linked case studies describe his role and scope for each project.
+
+Services include automating repetitive administration, integrating AI chatbots and image tools, building booking and payment experiences, improving existing systems, and helping startups launch products. Agency work includes web and mobile development and API integrations.
+
+## About and services
+
+- [Homepage](https://weikian.com/): Overview of Wei Kian's work and services.
+- [Services](https://weikian.com/#services): Software for businesses, startup product development, and development support for agencies.
+- [About and experience](https://weikian.com/#about): Background, technical skills, and experience at FusionHome, Sgcarmart, ABC Cooking Studio, AlphaXLab, Jobscentral, and GovTech.
+- [Contact](https://weikian.com/#contact): Email and introductory-call booking details for project enquiries.
+
+## Case studies
+
+- [FusionHome](https://weikian.com/projects/fusionhome.html): Technical leadership on an AI-powered furniture store using a customised Medusa platform and an interior design SaaS product with AI staging, image tools, and credit-based subscriptions.
+- [Alpine Seatrium](https://weikian.com/projects/alpine-seatrium.html): Equipment rental management across a web system and Android app, including bookings, contracts, invoicing, maintenance, and data migration. Reported efficiency figures are client estimates, not independently audited results.
+- [The Wandering Lens](https://weikian.com/projects/wandering-lens.html): Replacement of a WordPress travel website with a custom website and staff portal for managing travel listings and bookings.
+- [ABC Connect](https://weikian.com/projects/abc-connect.html): ABC Cooking Studio's member booking app, built in a two-person team using React Native, NestJS, Next.js, and AWS.
+
+## More portfolio work
+
+- [Selected work](https://weikian.com/#work): Additional website projects include Qi Lai Feng, Shop Purl, and BrainSolutionz, with requirements, design, development, deployment, and maintenance.
+- [ABC Mart](https://weikian.com/#abc-mart): Kitchenware e-commerce store with member and non-member pricing and a customised backend.
+- [GOAT Creative Studio](https://weikian.com/#goat-studio): Interior design website delivered from requirements and design through deployment, maintenance, and Google SEO.
+
+## Optional
+
+- [Workshops](https://weikian.com/#workshops): Chatbot workshops conducted at WeWork and IRAS.
+- [Sitemap](https://weikian.com/sitemap.xml): Canonical public pages on this website.

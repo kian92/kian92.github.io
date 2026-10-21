@@ -10,6 +10,7 @@ Personal portfolio at [weikian.com](https://weikian.com), served as static HTML,
 - `js/site.js` and `js/comparison.js`: navigation highlighting and image comparison.
 - `img/`: screenshots, photos, and optimised image variants.
 - `CNAME`, `robots.txt`, and `sitemap.xml`: custom domain and search engine discovery.
+- `llms.txt`: a concise guide to the public portfolio for AI tools. Keep its services, project roles, and links aligned with the visible pages; it does not guarantee search inclusion.
 
 There is no build step and no third-party npm dependency. The former Bootstrap/jQuery template, copied vendor libraries, and Gulp/Sass build pipeline have been removed because the current site does not use them.
 
