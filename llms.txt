@@ -4,14 +4,14 @@
 
 This is Wei Kian's personal portfolio. It includes freelance projects and work delivered as part of company teams. The linked case studies describe his role and scope for each project.
 
-Services include automating repetitive administration, integrating AI chatbots and image tools, building booking and payment experiences, improving existing systems, and helping startups launch products. Agency work includes web and mobile development and API integrations.
+Services include AI agents and workflow automation for repetitive administration, AI chatbots that answer from a company's own documents (for example, for a travel company), extracting data from invoices, receipts and forms sent through Telegram, AI image and video tools, booking and payment experiences, improving existing systems, and helping startups launch products. He works with OpenAI, Claude, and Gemini models. Agency work includes web and mobile development, APIs in Laravel, Symfony, Node.js, and NestJS, and AI integrations.
 
 ## About and services
 
 - [Homepage](https://weikian.com/): Overview of Wei Kian's work and services.
 - [Services](https://weikian.com/#services): Software for businesses, startup product development, and development support for agencies.
 - [About and experience](https://weikian.com/#about): Background, technical skills, and experience at FusionHome, Sgcarmart, ABC Cooking Studio, AlphaXLab, Jobscentral, and GovTech.
-- [Contact](https://weikian.com/#contact): Email and introductory-call booking details for project enquiries.
+- [Contact](https://weikian.com/#contact): Email details for project enquiries.
 
 ## Case studies
 
